@@ -12,7 +12,7 @@ mongoose.connect('mongodb://akspikey:thats11310104007@ds235850.mlab.com:35850/li
 .catch(err => console.log(err));
 
 app.use(bodyParser.json());
-app.use('/api/listgroup', listgroup);
+app.use('/repo', listgroup);
 
 
 app.listen('5000', () => console.log('Server running'))
