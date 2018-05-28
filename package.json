@@ -1,0 +1,20 @@
+{
+  "name": "react-search-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "scripts": {
+    "server": "nodemon index.js"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "csvtojson": "^2.0.0",
+    "elasticsearch": "^15.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.2",
+    "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5"
+  }
+}
