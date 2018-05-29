@@ -14,5 +14,5 @@ mongoose.connect('mongodb://akspikey:thats11310104007@ds235850.mlab.com:35850/li
 app.use(bodyParser.json());
 app.use('/repo', listgroup);
 
-
-app.listen('5000', () => console.log('Server running'))
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log('Server running'))
