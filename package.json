@@ -6,7 +6,8 @@
     "axios": "^0.18.0"
   },
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "start": "nodemon index.js"
   },
   "devDependencies": {
     "body-parser": "^1.18.3",
