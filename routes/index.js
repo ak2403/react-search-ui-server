@@ -78,4 +78,13 @@ router.post('/changeRepoList', (req, res) => {
     });
 })
 
+router.post('/changeRepoName', (req, res) => {
+    repos.findOneAndUpdate({ name: req.body.name }, { $set: { name: req.body.rename } }, { new: true }, (err, doc) => {
+        res.json({
+            "success": false,
+            "repoDetail": doc
+        })
+    });
+})
+
 module.exports = router;
