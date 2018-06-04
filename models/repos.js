@@ -9,6 +9,9 @@ const reposGroup = new Schema({
     lists: {
         type: Array
     },
+    ownedBy: {
+        type: String
+    },
     createdAt: {
         type: Date,
         default: Date.now

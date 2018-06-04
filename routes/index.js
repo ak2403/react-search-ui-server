@@ -87,4 +87,18 @@ router.post('/changeRepoName', (req, res) => {
     });
 })
 
+router.post('/deleteRepo', (req, res) => {
+    repos.findById(req.body._id).then(resp => {
+        if (resp.ownedBy === req.body.ownedBy) {
+            resp.remove().then(deleted => {
+                repos.find({}).then(list => {
+                    res.json({
+                        "repoLists": list
+                    })
+                })
+            });
+        }
+    })
+});
+
 module.exports = router;
